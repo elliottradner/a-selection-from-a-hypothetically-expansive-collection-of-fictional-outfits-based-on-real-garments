@@ -2,7 +2,7 @@
 <script>
   var pieces = [];
   {% for piece in site.pieces %}
-  pieces.push("{{ piece.url }}");
+  pieces.push("/{{ piece.url }}");
   {% endfor %}
   document.write("<meta http-equiv=\"refresh\" content=\"1;url=");
   document.write(pieces[Math.floor(Math.random() * pieces.length)]);
