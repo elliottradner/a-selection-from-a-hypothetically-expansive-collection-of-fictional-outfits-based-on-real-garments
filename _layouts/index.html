@@ -14,6 +14,9 @@ audioElement.setAttribute('src', '{{ site.baseurl }}/bell-ringing.mp3');
   	$(this).next().show(0).delay(8000).fadeOut(800);
   });
 
+  $( ".clothes-box" ).click(function() {
+    $(this).hide();
+  });
 
   $('a.piece-title').click(function() {
     audioElement.play();
@@ -38,12 +41,12 @@ audioElement.setAttribute('src', '{{ site.baseurl }}/bell-ringing.mp3');
           <p><i>{{ piece.title }}</i></p>
           {{ piece.content }}
         </div>
-        <div class="clearer"></div>
       </div>
     {% endfor %}
+    <div class="clearer"></div>
     <div class="credit">
       <p>NP, ER</p>
-      <p>2017</p>
+      <p>S17</p>
     </div>
   </div>
 
