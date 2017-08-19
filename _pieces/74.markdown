@@ -1,0 +1,17 @@
+---
+layout: piece
+title:  "74"
+date:   2017-02-28 12:13:39 -0500
+tags:
+- offline
+- wrinkled
+- jersey
+- resin
+- lost
+---
+
+Offline shirt
+
+wrinkled magenta jersey
+
+Resin bells underneath sleeves

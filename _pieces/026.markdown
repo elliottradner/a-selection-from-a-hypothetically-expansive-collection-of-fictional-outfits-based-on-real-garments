@@ -1,0 +1,14 @@
+---
+layout: piece
+title:  "026"
+author: Elliott
+date:   2017-02-28 12:13:39 -0500
+tags:
+- rain
+- garden
+- rocks
+- Elliott
+---
+Garden clogs
+
+Rockwall

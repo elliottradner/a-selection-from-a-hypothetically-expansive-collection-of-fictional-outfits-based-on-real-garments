@@ -1,0 +1,12 @@
+---
+layout: piece
+title:  "97"
+author: Natalia
+date:   2017-02-28 12:13:39 -0500
+tags:
+- jersey
+---
+
+of loose fit
+
+left to dry

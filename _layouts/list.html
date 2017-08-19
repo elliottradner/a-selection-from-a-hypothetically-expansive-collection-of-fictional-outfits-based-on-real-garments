@@ -1,0 +1,24 @@
+{% include _meta.html %}
+</head>
+
+<body>
+  {% include _header.html %}
+
+  <div class="clothes">
+    <ul>
+    {% for piece in site.pieces %}
+      <a id="clothing-link" href="{{ piece.url }}">
+        <li>
+            {{ piece.title }}
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+  <a id="random-link" href="/sevenofcups">
+    <div id="random"></div>
+  </a>
+  </div>
+
+</body>
+</html>

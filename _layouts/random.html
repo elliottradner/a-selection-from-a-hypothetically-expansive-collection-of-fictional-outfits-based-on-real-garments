@@ -1,0 +1,20 @@
+{% include _meta.html %}
+<script>
+  var pieces = [];
+  {% for piece in site.pieces %}
+  pieces.push("{{ piece.url }}");
+  {% endfor %}
+  document.write("<meta http-equiv=\"refresh\" content=\"1;url=");
+  document.write(pieces[Math.floor(Math.random() * pieces.length)]);
+  document.write("\">");
+</script>
+<style>
+  body {
+    background-color: #1e2c84;
+  }
+</style>
+</head>
+
+<body>
+</body>
+</html>
