@@ -1,6 +1,9 @@
 ---
+author: ''
+color: ''
 date: 2017-03-01 17:13:39 +0000
 layout: piece
+permalink: "/:title/"
 tags:
 - flashcard
 - height
@@ -8,9 +11,6 @@ tags:
 - spring
 - summer
 title: 16240
-author: ''
-color: ''
-permalink: "/:title/"
 ---
 
 
@@ -19,5 +19,3 @@ Gathered
 interfacing visible
 
 Flashcard in breast pocket
-
-testtesttes
