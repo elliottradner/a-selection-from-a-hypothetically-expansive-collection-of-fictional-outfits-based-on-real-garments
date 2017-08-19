@@ -13,8 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: A Selection from a Hypothetically Expansive Collection of Fictional Outfits Based on Real Garments\
-url: https://oilstel.github.io/a-selection-from-a-hypothetically-expansive-collection-of-fictional-outfits-based-on-real-garments/
+title: A Selection from a Hypothetically Expansive Collection of Fictional Outfits Based on Real Garments
 email: mail@clothesline.net
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
