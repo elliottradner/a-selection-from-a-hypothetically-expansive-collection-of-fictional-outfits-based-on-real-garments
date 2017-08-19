@@ -6,12 +6,12 @@ $( document ).ready(function() {
 
   var audioElement = document.createElement('audio');
 audioElement.setAttribute('src', '{{ site.baseurl }}/bell-ringing.mp3');
-  var $ul = $('.clothes-box');
+  var $piece = $('.clothes-box');
   $( ".clothes-box, a.piece-title, span" ).draggable();
   $( "a.piece-title" ).click(function() {
-      $ul.hide(0);
+      $piece.hide(0);
           $(this).addClass('highlight');
-  	$(this).next().show(0).fadeOut(10500);
+  	$(this).next().show(0).delay(8000).fadeOut(800);
   });
 
 

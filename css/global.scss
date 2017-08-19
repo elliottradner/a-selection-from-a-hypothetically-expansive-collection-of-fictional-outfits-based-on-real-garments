@@ -146,7 +146,7 @@ span {
   border: 1px solid $other-color;
   position: fixed;
   z-index: 9000;
-  top: 50vh;
+  bottom: 30vh;
   left: 30vw;
   padding: 100px;
   display: none;
@@ -158,6 +158,27 @@ span {
   -webkit-box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
 -moz-box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
 box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 535px) {
+  .clothes-box {
+    border: 1px solid $other-color;
+    position: fixed;
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 100px;
+    display: none;
+    max--height: 400px;
+    background-color: $other-color;
+    -webkit-box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
+    box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
+  }
 }
 
 .highlight {
