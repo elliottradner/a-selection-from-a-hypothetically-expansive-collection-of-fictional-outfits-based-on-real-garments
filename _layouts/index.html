@@ -6,12 +6,14 @@ $( document ).ready(function() {
 
   var audioElement = document.createElement('audio');
 audioElement.setAttribute('src', '{{ site.baseurl }}/bell-ringing.mp3');
-
   var $ul = $('.clothes-box');
+  $( ".clothes-box, a.piece-title, span" ).draggable();
   $( "a.piece-title" ).click(function() {
       $ul.hide(0);
-  	$(this).next().show(0);
+          $(this).addClass('highlight');
+  	$(this).next().show(0).fadeOut(10500);
   });
+
 
   $('a.piece-title').click(function() {
     audioElement.play();
@@ -20,32 +22,30 @@ audioElement.setAttribute('src', '{{ site.baseurl }}/bell-ringing.mp3');
 });
 </script>
 
-<style>
-  a.piece-title {
-    cursor: pointer;
-  }
-  .piece .content {
-        display: none;
-  }
-
-</style>
-
 </head>
 
 <body>
   {% include _header.html %}
 
   <div class="clothes">
+    <p>---</p>
     {% for piece in site.pieces %}
       <div class="piece">
         <a class="piece-title {{ piece.title }}">
               {{ piece.title }}
         </a>
-        <div class="clothes-box {{ piece.title }}">
+        <div id="draggable" class="clothes-box {{ piece.title }}">
+          <p><i>{{ piece.title }}</i></p>
           {{ piece.content }}
         </div>
+        <div class="clearer"></div>
       </div>
     {% endfor %}
+    <div class="credit">
+      <p>NP, ER</p>
+      <p>2017</p>
+    </div>
+  </div>
 
 </body>
 </html>
