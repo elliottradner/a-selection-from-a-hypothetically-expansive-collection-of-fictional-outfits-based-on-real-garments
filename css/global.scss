@@ -176,7 +176,7 @@ box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
     position: fixed;
     z-index: 9000;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -200,4 +200,5 @@ box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
 
 .credit {
   margin-top: 2em;
+  margin-bottom: 4em;
 }
