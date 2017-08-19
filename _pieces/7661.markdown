@@ -1,10 +1,13 @@
 ---
 layout: piece
-title:  "7661"
+title: 7661
 author: Natalia
-date:   2017-02-28 12:13:39 -0500
-tags:
+date: 2017-02-28 17:13:39 +0000
+tags: []
+color: ''
+permalink: "/:title/"
 ---
+
 
 Velveteen
 
@@ -13,3 +16,5 @@ posed
 310-999-SOUL
 
 ‘ashy’
+
+TEST
