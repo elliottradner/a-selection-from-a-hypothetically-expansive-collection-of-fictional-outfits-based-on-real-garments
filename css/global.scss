@@ -5,6 +5,14 @@ $bg-color: #4286f4;
 $font-color: #000;
 $other-color: #07770e;
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
   font-size: 17px;
   font-family: "Geneva", serif;
@@ -111,10 +119,32 @@ p:last-child, h2:last-child {
   padding: .8em;
 }
 
-.clothes ul li {
+.piece {
+  display: block;
+  width: 80%;
+}
+
+a.piece-title {
   padding: .7em;
   border: solid $other-color;
-  border-width: 1px 0px 1px 1px;
   display: inline-block;
+  border-width: 1px 0px 1px 1px;
+  float: left;
   margin-bottom: 10px;
+}
+
+.clothes-box {
+  border: 1px solid $other-color;
+  position: absolute;
+  bottom: 10em;
+  left: 10em;
+  padding: 10px;
+  display: none;
+  max-width: 400px;
+  width: 100%;
+  min-height: 400px;
+  background-color: #fff;
+  -webkit-box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
+-moz-box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
+box-shadow: inset 10px 10px 16px 0px rgba(0,0,0,0.12);
 }

@@ -1,24 +1,51 @@
 {% include _meta.html %}
+
+<script>
+
+$( document ).ready(function() {
+
+  var audioElement = document.createElement('audio');
+audioElement.setAttribute('src', 'http://www.soundjay.com/misc/sounds/bell-ringing-01.mp3');
+
+  var $ul = $('.clothes-box');
+  $( "a.piece-title" ).click(function() {
+      $ul.hide(0);
+  	$(this).next().show(0);
+  });
+
+  $('a.piece-title').click(function() {
+    audioElement.play();
+});
+
+});
+</script>
+
+<style>
+  a.piece-title {
+    cursor: pointer;
+  }
+  .piece .content {
+        display: none;
+  }
+
+</style>
+
 </head>
 
 <body>
   {% include _header.html %}
 
   <div class="clothes">
-    <ul>
     {% for piece in site.pieces %}
-      <a id="clothing-link" href="{{ site.baseurl }}/{{ piece.title }}">
-        <li>
-            {{ piece.title }}
-        </li>
-      </a>
+      <div class="piece">
+        <a class="piece-title {{ piece.title }}">
+              {{ piece.title }}
+        </a>
+        <div class="clothes-box {{ piece.title }}">
+          {{ piece.content }}
+        </div>
+      </div>
     {% endfor %}
-  </ul>
-
-  <a id="random-link" href="{{ site.baseurl }}/sevenofcups">
-    <div id="random"></div>
-  </a>
-  </div>
 
 </body>
 </html>
