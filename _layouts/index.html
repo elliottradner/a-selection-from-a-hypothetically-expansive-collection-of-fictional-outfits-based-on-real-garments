@@ -1,26 +1,24 @@
 {% include _meta.html %}
-
-<style>
-  body {
-    background-color: #fff;
-  }
-</style>
-
 </head>
 
-
-
 <body>
-  <a id="header-link" href="/list">
-    <div id="intro">
-      <h1>{{site.title}}</h1>
-    </div>
-  </a>
+  {% include _header.html %}
 
-  <a href="/list">
-    <div id="intro-img">
-      <img src="/imgs/shopping.jpg" />
-    </div>
+  <div class="clothes">
+    <ul>
+    {% for piece in site.pieces %}
+      <a id="clothing-link" href="{{ piece.url }}">
+        <li>
+            {{ piece.title }}
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+  <a id="random-link" href="{{ site.url }}/sevenofcups">
+    <div id="random"></div>
   </a>
+  </div>
+
 </body>
 </html>
