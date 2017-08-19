@@ -1,17 +1,23 @@
 ---
+date: 2017-03-01 17:13:39 +0000
 layout: piece
-title:  "16240"
-date:   2017-03-01 12:13:39 -0500
 tags:
 - flashcard
 - height
 - pockets
 - spring
 - summer
+title: 16240
+author: ''
+color: ''
+permalink: "/:title/"
 ---
+
 
 Gathered
 
 interfacing visible
 
 Flashcard in breast pocket
+
+testtesttes
