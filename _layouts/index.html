@@ -5,7 +5,7 @@
 $( document ).ready(function() {
 
   var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', 'http://www.soundjay.com/misc/sounds/bell-ringing-01.mp3');
+audioElement.setAttribute('src', '{{ site.baseurl }}/bell-ringing.mp3');
 
   var $ul = $('.clothes-box');
   $( "a.piece-title" ).click(function() {
