@@ -7,7 +7,7 @@
   <div class="clothes">
     <ul>
     {% for piece in site.pieces %}
-      <a id="clothing-link" href="{{ site.url }}{{ piece.url }}">
+      <a id="clothing-link" href="{{ site.baseurl }}{{ piece.title }}">
         <li>
             {{ piece.title }}
         </li>
@@ -15,7 +15,7 @@
     {% endfor %}
   </ul>
 
-  <a id="random-link" href="{{ site.url }}/sevenofcups">
+  <a id="random-link" href="{{ site.baseurl }}/sevenofcups">
     <div id="random"></div>
   </a>
   </div>
